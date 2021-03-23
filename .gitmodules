@@ -1,0 +1,3 @@
+[submodule "baby-project-server"]
+	path = baby-project-server
+	url = git@github.com:TurkuForge/baby-project-server.git
