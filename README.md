@@ -1,6 +1,24 @@
 # Baby Project Deployment
-This repository serves as a form of documentation and deployment mechanism 
-through github actions for how we deploy the Baby Project to a server along with
-what security measures we have in place for securing the app and the server(s).
+We use a micro repo structure for a few reasons, but the main one is that we can make use of
+GitHub pages for each repo separately. That way we can deploy docs, test coverage or even a full webapp without extra
+dealing with extra fees. That comes with some drawbacks, but some benefits as well. We publish individual releases from
+each repo and use this repo to deploy them.
 
-<!-- @TODO: add the deployment structure here once we have on -->
+We use [Dokku](https://dokku.com/) for deployment. The main reason is that it's easy to set up and quite easy to scale and 
+maintain. You can however deploy it locally as well using docker.
+
+First build it 🛠
+```shell
+docker build -t baby-project .
+```
+Then run it 🏃‍
+```shell
+docker run -dp 8080:80 baby-project
+```
+Then go to 
+`localhost:8080`
+and then you have the production env running locally.
+
+The official deployment to the server is done through GitHub actions. The prosess is basicly just bumping the version in
+the `.env` file that we keep in the version control and create a PR. Only orginization mebers can create PRs for this repo.
+This is only for safety reasons. We don't want anyone to deploy unwanted changes.
