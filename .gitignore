@@ -1,0 +1,6 @@
+# Direcories
+.idea
+.vscode
+
+# Common files
+.DS_Store
