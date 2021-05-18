@@ -17,7 +17,7 @@ docker run -dp 8080:80 baby-project
 ```
 Then go to 
 `localhost:8080`
-and then you have the production env running locally.
+and then you have the production environment running locally.
 
 The official deployment to the server is done through GitHub actions. The prosess is basicly just bumping the version in
 the `.env` file that we keep in the version control and create a PR. Only orginization mebers can create PRs for this repo.
