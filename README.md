@@ -1,19 +1,19 @@
 # Baby Project Deployment
 We use a micro repo structure for a few reasons, but the main one is that we can make use of
-GitHub pages for each repo separately. That way we can deploy docs, test coverage or even a full webapp without
-dealing with extra fees. That comes with some drawbacks, but some benefits as well. We publish individual releases from
+GitHub pages for each repo separately. That way we can deploy documents/our documentation, test coverage or even a full webapp without extra fees. 
+That comes with some drawbacks, but some benefits as well. We publish individual releases from
 each repo and use this repo to deploy them.
 
-We use [Dokku](https://dokku.com/) for deployment. The main reason is that it's easy to set up and quite easy to scale and 
-maintain. You can however deploy it locally as well using docker.
+We use [Dokku](https://dokku.com/) for deployment. The main reason is that it's quite easy to set up, scale and 
+maintain. You can however deploy it locally as well using Docker.
 
 First build it 🛠
 ```shell
-docker build -t baby-project .
+docker build --tag baby-project .
 ```
 Then run it 🏃‍
 ```shell
-docker run -dp 8080:80 baby-project
+docker run --detach --publish 8080:80 baby-project
 ```
 Then go to 
 `localhost:8080`
