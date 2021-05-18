@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# This File is ran once the docker container in this repo has been
-# Built and started
+# This file is run once the Docker container in this repo has been built and started.
 
 if [ -f .env ]
 then
