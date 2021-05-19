@@ -4,7 +4,7 @@ EXPOSE 80
 
 RUN mkdir /app
 
-# Copy/Copies required files.
+# Copy required files.
 COPY ./nginx.conf.sigil /app
 COPY ./.env /app
 COPY ./web.sh /app
