@@ -19,5 +19,5 @@ Then go to
 and then you have the production environment running locally.
 
 The official deployment to the server is done through GitHub actions. The process is basically just bumping the version in
-the `.env` file that we keep in the version control and create a PR. Only orginization mebers can create PRs for this repo.
+the `.env` file that we keep in the version control and create a PR. Only organization members can create PRs for this repo.
 This is only for safety reasons. We don't want anyone to deploy unwanted changes.
