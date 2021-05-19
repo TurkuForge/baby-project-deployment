@@ -4,8 +4,7 @@ GitHub pages for each repo separately. That way we can deploy our documentation,
 That comes with some drawbacks, but some benefits as well. We publish individual releases from
 each repo and use this repo to deploy them.
 
-We use [Dokku](https://dokku.com/) for deployment. The main reason is that it's quite easy to set up, scale and 
-maintain. You can however deploy it locally as well using Docker.
+We use [Dokku](https://dokku.com/) for deployment. The main reason is that it's quite easy to set up, scale, and maintain. You can however deploy it locally as well using Docker.
 
 First build it 🛠
 ```shell
