@@ -1,6 +1,6 @@
 # Baby Project Deployment
 We use a micro repo structure for a few reasons, but the main one is that we can make use of
-GitHub pages for each repo separately. That way we can deploy documents/our documentation, test coverage or even a full webapp without extra fees. 
+GitHub pages for each repo separately. That way we can deploy our documentation, test coverage or even a full webapp without extra fees. 
 That comes with some drawbacks, but some benefits as well. We publish individual releases from
 each repo and use this repo to deploy them.
 
